@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+    <main>
+        <section class="texto">
+            <h1 class="titulo">Learn to code by watching others</h1>
+            <p class="parrafo">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable.</p>
+        </section>
+
+        <section class="registro_y_formulario">
+            <article class="texto_oferta">
+                <p>Try it free 7 days then $20/mo. thereafter</p>
+            </article>
+            
+            <form action="/" id="formulario">
+                <div class="form_input form_input--a">
+                    <span class="icono_n"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></span>
+                    <input type="text" id="nombre" placeholder="First Name" name="nombre">
+                    <p id="texto_nombre" class="textN">El nombre no debe estar en blanco</p>
+                </div>
+                <div class="form_input form_input--a">
+                    <span class="icono_a"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></span>
+                    <input type="text" id="apellido"placeholder="Last Name" name="apellido">
+                    <p id="texto_apellido" class="textA">El Apellido no debe estar en blanco</p>
+                </div>
+                <div class="form_input form_input--a">
+                    <span class="icono_e"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></span>
+                    <input type="email" id="correo" placeholder="Email Address" name="correo">
+                    <p id="texto_correo" class="textE">El Email es requerido</p>
+                </div>
+                <div class="form_input form_input--a">
+                    <span class="icono_c"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg></span>
+                    <input type="password" id="contrasena" autocomplete="cc-csc" placeholder="Password" name="contrasena">
+                    <p id="texto_contrasena" class="textC">La contraseña debe tener más de 4 caracteres</p>
+                </div>
+                <div class="enviar_y_acuerdo">
+                    <input type="submit" value="CLAIM YOUR FREE TRIAL" class="boton_enviar">
+                    <p id="texto_terminos">By clicking the button, you are agreeing to our</p>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">W. Daniel Olaverría</a>.
+        </p>
+      </footer>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

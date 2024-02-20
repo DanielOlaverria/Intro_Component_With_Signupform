@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    --fondomovil: url(images/bg-intro-mobile.png);
+    --fondodesktop: url(images/bg-intro-desktop.png);
+}
+main{
+    width: 375px;
+    background-image: var(--fondomovil);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 75%;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 40px 0px;
+    margin: 0 auto;
+}
+.texto{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.titulo, .parrafo{
+    text-align: center;
+    padding: 0 30px;
+    color: #fff;
+}
+.texto_oferta{
+    padding: 8px 45px;
+    text-align: center;
+    color: #fff;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    margin: 25px 0;
+    box-shadow: 0 6px 4px 0 hsla(249, 10%, 26%, 0.30);
+}
+
+.form_input{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.form_input>input{
+    width: 92%;
+    padding: 16px 0 16px 16px;
+    border-radius: 5px;
+    border: 0.5px solid hsl(28, 10%, 26%);
+    margin-top: 20px;
+    outline: none;
+}
+
+.form_input>input:focus{
+    border: 0.5px solid hsl(248, 32%, 49%);
+    outline: 0.5px solid hsl(248, 32%, 49%);
+}
+#texto_apellido, #texto_correo, #texto_nombre{
+    margin-bottom: -15px;
+}
+#texto_contrasena{
+    margin-bottom: -15px;
+}
+
+.textC, .textA, .textE, .textN{
+    width: 95%;
+    margin: 0 0 20px 0;
+    font-size: 10px;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    border: hsl(0, 100%, 74%);
+    outline: none;
+    display: none;
+}
+input::placeholder{
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+    font-family: 'Poppins', sans-serif;
+}
+.icono_c, .icono_a, .icono_e{
+    width: 50%;
+    display: none;
+    justify-content: flex-end;
+    position: relative;
+    top: 58px;
+    left: 118px;
+}
+.icono_n{
+    width: 50%;
+    display: none;
+    justify-content: flex-end;
+    position: relative;
+    top: 36px;
+    left: 118px;
+}
+
+.registro_y_formulario{
+    padding: 0 30px;
+}
+#formulario{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 20px 0;
+    box-shadow: 0 6px 4px 0 hsla(249, 10%, 26%, 0.30);
+}
+.enviar_y_acuerdo{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px 0 0 0;
+}
+.boton_enviar{
+    width: 100%;
+    padding: 18px 0px;
+    margin-top: 12px;
+    background-color:  hsl(154, 59%, 51%);
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: inset 0px -4px 0px 0px hsla(249, 10%, 26%, 0.20);
+}
+.boton_enviar:hover{
+    background-color: hsl(154, 64%, 63%);
+    cursor: pointer;
+}
+#texto_terminos{
+    display: block;
+    text-align: center;    
+    font-size: 12px;
+}
+#texto_terminos::after{
+    content: " Terms and Services";
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1440px){
+    main{
+        width: 100%;
+        background-image: var(--fondodesktop);
+        background-repeat: repeat;
+        background-position: center;
+        background-size: 90%;
+        background-color: hsl(0, 100%, 74%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px 30px 0px;
+        margin: 0;
+    }
+    .texto{
+        width: 35%;
+        text-align: left;
+        margin: 0;
+        padding: 0 25px 0 0;
+    }
+    .parrafo{
+        text-align: left;
+        padding: 20px 20px 0 0;
+    }
+    .titulo{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .texto_oferta{
+        padding: 4px 45px;
+        font-size: 12px;
+    }
+    .icono_c, .icono_n, .icono_a, .icono_e{
+        left: 150px;
+    }
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
